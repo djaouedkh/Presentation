@@ -1,0 +1,577 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'GlacialIndifferenceRegular';
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    height: 100vh;
+    width: 100%;
+
+    background-image: url("./canadaForestlumi2.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    transition: 1s;
+}
+.barNav{
+    width: 100%;
+    height: 50px;
+}
+.bonjour{
+    color: white;
+    font-size: 5vh;
+    font-style: italic;
+    margin-left: 2em;
+    margin-top: 5em;
+    transition: 1s;
+}
+.developpeur{
+    color: white;
+    font-size: 10vh;
+    font-weight: bold;
+    margin-left: 1em;
+    transition: 1s;
+}
+.requete{
+    font-size: 30px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: 1s;
+}
+.icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    transition: 1s;
+}
+.icon-code1:hover{
+    color: limegreen;
+    transition: 0.7s;
+}
+.icon-database1:hover{
+    color: #3498DB;
+    transition: 0.7s;
+}
+.icon-mobile1:hover{
+    color: #ff3300;
+    transition: 0.7s;
+}
+.icon-pencil1:hover{
+    color: orange;
+    transition: 0.7s;
+}
+.gras-grand{
+    font-size: 30px;
+    font-weight: 600;
+}
+.gras{
+    font-weight: bold;
+}
+
+/*------------DESCRIPTION------------*/
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text-about{
+    width: 50%;
+    font-size: 18px;
+    line-height: 30px;
+}
+.text-about p{
+    padding: 5px;
+}
+.phototext{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    transition: 1s;
+}
+.phototext img{
+    margin-bottom: 10px;
+}
+.phototext p{
+    line-height: 2rem;
+}
+.contactcvbutton{
+    text-align: center;
+}
+.contactbutton, .cvbutton{
+    height: 60px;
+    width: 16em;
+    margin: 5px;
+    color: white; 
+    cursor: pointer; 
+    font-size: 17px;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 16%);
+}
+.contactbutton{
+    background: rgb(47, 220, 156);
+}
+.cvbutton{
+    background: rgb(211 195 176);
+}
+.contactbutton:hover, .cvbutton:hover{
+    font-size: 18px;
+    transition: 0.2s;
+    box-shadow: 5px 5px 5px 0px rgb(0 0 0 / 26%);
+
+}
+
+/* --------------- COMPETENCES----------------- */
+.competences{
+    background: rgb(221 205 186 / 33%);
+    padding: 3rem 0 3rem 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-skills{
+    display: flex;
+    height: fit-content;
+    margin-top: 3em;
+}
+.icon-right{
+    display: flex;
+    align-items: center;
+    margin-left: 7rem;
+}
+.icon-left{
+    display: flex;
+    align-items: center;
+    margin-right: 7rem;
+}
+.skills{
+    width: 50vw;
+    height: fit-content;
+    background-color: white;
+    padding: 0 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 16%);
+}
+.title-skills{
+    margin-bottom: 0;
+}
+.p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.box-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    margin-top: 20px;
+
+}
+.box-child{
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+}
+.box-child h4{
+    margin: -12px 0 13px 0;
+}
+.colonne-namestars{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+.name-stars{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+.box-child1{
+    width: fit-content;
+    margin-top: 0;
+}
+.green{   
+    color: limegreen;
+}
+.blue{
+    color: #3498DB;
+}
+.red{   
+    color: #ff3300;
+}
+.yellow{   
+    color: orange;
+}
+.purple{
+    color: darkmagenta;
+}
+.grey{
+    color: slategray;
+}
+
+/*------------PARCOURS----------*/
+.title-parcours{
+    display: flex;
+    justify-content: center;
+}
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline ul .li { /* BARRE */
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: auto;
+    background: #e8d8cc;
+}
+
+.timeline ul .li::after { /* MARQUEURS */
+content: "";
+position: absolute;
+left: 50%;
+bottom: 0;
+transform: translateX(-50%);
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: inherit;
+}
+
+.timeline ul .li div { /* BLOC XP */
+position: relative;
+bottom: 0;
+width: 600px;
+padding: 15px;
+background: rgb(221 205 186 / 22%);
+opacity: 0;
+transition: all 0.5s ease-in-out;
+}
+
+.timeline ul .li div::before { /* LA FLECHE DES BLOCS */
+content: "";
+position: absolute;
+bottom: 7px;
+width: 7px;
+height: 0;
+border-style: solid;
+}
+
+.timeline ul .li:nth-child(odd) div { /* BLOC PAIRS odd=pairs */
+left: 45px;
+}
+
+.timeline ul .li:nth-child(odd) div::before {
+left: -15px;
+border-width: 10px 8px 10px 0;
+border-color: transparent rgb(221 205 186 / 33%) transparent transparent;
+}
+
+.timeline ul .li:nth-child(even) div { /* BLOC IMPAIRS even=impairs */
+left: -670px;
+}
+
+.timeline ul .li:nth-child(even) div::before {
+right: -15px;
+border-width: 10px 0 10px 8px;
+border-color: transparent transparent transparent rgb(221 205 186 / 33%);
+}
+
+time {
+display: block;
+font-size: 1.2rem;
+font-weight: bold;
+margin-bottom: 8px;
+}
+.ul-qualite{
+list-style: outside;
+font-size: 17px;
+line-height: 27px;
+}
+  /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline ul .li:nth-child(odd) div {
+transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul .li:nth-child(even) div {
+transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul .li.in-view div {
+transform: none;
+visibility: visible;
+opacity: 1;
+box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 16%);
+border-radius: 10px;
+}
+  
+  
+/*-----------PORTFOLIO-------------*/
+.portfolio{
+    text-align: -webkit-center;
+    background: rgb(221 205 186 / 33%);
+    padding: 3em;
+}
+.containerprojet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4em;
+}
+.projet{
+    width: 575px;
+    height: 402px;
+    margin: 10px;
+    overflow: hidden;
+    background-image: url("./Capture.PNG");
+    background-size: cover;
+    filter: drop-shadow(2px 1px 3px black);
+    border-radius: 10px;
+}
+.descriptionprojet{
+    background-color: white;
+    height: 402px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(330px);
+    transition: 0.5s;
+}
+.projet:hover .descriptionprojet{
+    transform: translateY(0px);
+}
+.title-projet{
+    height: 73px;
+    margin-bottom: 20px;
+}
+.tag{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.tag p{
+    margin: 0 5px;
+    padding: 4px 10px;
+    background: rgb(211 195 176);
+    border-radius: 5px;
+}
+.descriptionprojet ul{
+    text-align: left;
+    margin-left: 2em;
+    overflow: auto;
+    height: 150px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.contain-voirsite{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+.voirsite{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(47, 220, 156);
+    color: white;
+    margin: 0px;
+    padding: 12px 30px;
+    box-shadow: 3px 3px 5px 0px rgb(0 0 0 / 16%);
+    width: 10em;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+
+}
+.voirsite:hover{
+    font-size: 17px;
+    box-shadow: 5px 5px 7px 0px rgb(0 0 0 / 26%);
+    transition: 0.2s;
+}
+.chevron{
+    margin-left: 15px;
+}
+
+/* ----------CONTACT------------ */
+.contact{
+    text-align: center;
+    padding: 2em;
+    font-size: 20px;
+}
+.container-contact{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.section-contact{
+    padding: 20px;
+    width: 14em;
+    border-radius: 9px;
+}
+.section-contact p{
+    font-size: x-large;
+    margin: 0;
+}
+.contact-mail{
+color: royalblue;
+background-color: rgb(65 105 225 / 20%);
+}
+.contact-mobile{
+    color: olivedrab;
+    background-color: rgb(107 142 35 / 20%)
+}
+
+/* -----------FOOTER--------- */
+footer{
+    background: rgb(221 205 186 / 33%);
+    padding: 2em;
+    text-align: center;
+}
+.icon-footer1{
+    padding:  12px;
+    margin: 5px;
+    background-color: #007bb6;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.icon-footer1:hover{
+    background-color: transparent;
+    color: black;
+}
+.icon-footer2{
+    padding:  12px;
+    margin: 5px;
+    background-color: #ee7252;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    transition: 0.7s;
+}
+.icon-footer2:hover{
+    background-color: transparent;
+    color: black;
+}
+
+
+
+  /* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  @media screen and (max-width: 1400px) {
+    .timeline ul .li {
+            margin-left: 0;
+    }
+    .timeline ul .li div {
+        width: calc(80vw - 91px);
+    }
+    .timeline ul .li:nth-child(even) div {
+        left: 45px;
+    }
+    .timeline ul .li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 10px 8px 10px 0;
+        border-color: transparent rgb(221 205 186 / 33%) transparent transparent;
+    }
+    header{
+        height: fit-content;
+    }
+    .bonjour{
+        font-size: 3vh;
+        margin-top: 1em;
+    }
+    .developpeur{
+        font-size: 7vh;
+    }
+    .requete p{
+        font-size: 2vh;
+    }
+    .icon{
+        font-size: 3vh;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .icon-right, .icon-left{
+        display: none;
+    }
+    .bonjour{
+        font-size: 2vh;
+        margin-top: 1em;
+    }
+    .developpeur{
+        font-size: 4vh;
+    }
+    .icon{
+        font-size: 2vh;
+    }
+    .phototext{
+        width: fit-content;
+        display: flex;
+        flex-direction: unset;
+    }
+    .phototext img{
+        width: 11em;
+    }
+    .text-about{
+        width: fit-content;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about p{
+        font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .timeline ul .li {
+      margin-left: 0;
+    }
+    .timeline ul .li div {
+      width: calc(80vw - 91px);
+    }
+    .timeline ul .li:nth-child(even) div {
+      left: 45px;
+    }
+    .timeline ul .li:nth-child(even) div::before {
+      left: -15px;
+      border-width: 10px 8px 10px 0;
+      border-color: transparent rgb(221 205 186 / 33%) transparent transparent;
+    }
+    .skills{
+        font-size: 15px;
+    }
+    .ul-qualite{
+        font-size: 15px;
+    }
+    .parcours{
+        font-size: 13px;
+    }
+    .contact{
+        font-size: 15px;
+    }
+    .contact p, .section-contact{
+        font-size: 15px;
+    }
+  }
